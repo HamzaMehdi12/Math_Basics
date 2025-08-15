@@ -8,4 +8,4 @@ The functions implemented are as follows:
 ### Eigen values and vectors (def eigen)
 ### Single Value Decompositon (def svd)
 
-More updates and images would be posted as we develop a more techically sound solution.
+
