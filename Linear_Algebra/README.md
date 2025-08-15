@@ -1,12 +1,88 @@
 ## Linear Algebra
 Here we implement the basics of Mathematics and functions that would be used in Machine Learning, and in general, in daily-life case
 
-The functions implemented are as follows:
-### Dot Product (def dot)
-### Matrix Multiplication (def matmul) [Similar to dot]
-### Inverse (def inverse)
-### Eigen values and vectors (def eigen)
-### Single Value Decompositon (def svd)
+### Results
+
+### Matrix A (5x5)
+
+|       | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |
+|-------|-------|-------|-------|-------|-------|
+| Row 1 | 0     | 2     | 4     | 6     | 8     |
+| Row 2 | 2     | 4     | 6     | 8     | 10    |
+| Row 3 | 4     | 6     | 8     | 10    | 12    |
+| Row 4 | 6     | 8     | 10    | 12    | 14    |
+| Row 5 | 8     | 10    | 12    | 14    | 16    |
+
+### Matrix B (5x5)
+
+|       | Col 1 | Col 2 | Col 3 | Col 4 | Col 5 |
+|-------|-------|-------|-------|-------|-------|
+| Row 1 | 0     | 3     | 6     | 9     | 12    |
+| Row 2 | 3     | 6     | 9     | 12    | 15    |
+| Row 3 | 6     | 9     | 12    | 15    | 18    |
+| Row 4 | 9     | 12    | 15    | 18    | 21    |
+| Row 5 | 12    | 15    | 18    | 21    | 24    |
+
+---
+
+### Matrix Multiplication Result (A × B)
+
+|       | Result |
+|-------|--------|
+| Row 1 | 180    |
+| Row 2 | 330    |
+| Row 3 | 540    |
+| Row 4 | 810    |
+| Row 5 | 1140   |
+
+---
+
+### Matrix Inverse Example
+
+### Original Matrix for Inverse (2x2)
+
+|       | Col 1 | Col 2 |
+|-------|-------|-------|
+| Row 1 | 4     | 4     |
+| Row 2 | 4     | 8     |
+
+### Completed Inverse
+
+|       | Col 1 | Col 2 |
+|-------|-------|-------|
+| Row 1 | 4     | 4     |
+| Row 2 | 4     | 8     |
+
+---
+
+### Eigenvalues and Eigenvectors
+
+- Matrix: 
+
+|       | Col 1 | Col 2 |
+|-------|-------|-------|
+| Row 1 | 4     | 4     |
+| Row 2 | 4     | 8     |
+
+- Eigenvalues: **a = -12, b = -8**  
+- Reduced Form: 
+
+|       | Col 1 | Col 2 |
+|-------|-------|-------|
+| Row 1 | 1.0   | 0.0   |
+| Row 2 | 0.0   | 1.0   |
+
+---
+
+### Singular Value Decomposition (SVD)
+
+- Matrix for SVD:
+
+|       | Col 1 | Col 2 |
+|-------|-------|-------|
+| Row 1 | 1.0   | 0.0   |
+| Row 2 | 0.0   | 1.0   |
+
 
 ## Probaility and Statistics
 We develop a statistical pipeline without the aid of any library. We received the following results:
@@ -23,7 +99,7 @@ Array A passed with values (10x10), rows: 10, cols: 10:
 | Row 3 | ...   | ...   | ...   | ...   | ...   | ...   | ...   | ...   | ...   | ...    |
 | Row 10| ...   | ...   | ...   | ...   | ...   | ...   | ...   | ...   | ...   | ...    |
 
-
+---
 
 ### Statistics Computed
 
@@ -34,6 +110,7 @@ Array A passed with values (10x10), rows: 10, cols: 10:
 | Distribution PDF  | 20 elements | Values of probability density function for dataset elements |
 | CDF               | 20 elements | Cumulative distribution function from the PDF          |
 
+---
 ### Results
 Below are the results of the processed data in ***PDF*** and ***CDF***
 
